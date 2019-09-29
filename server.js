@@ -15,7 +15,7 @@ var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
 
 if (mongoURL == null) {
   var mongoHost, mongoPort, mongoDatabase, mongoPassword, mongoUser;
-  // If using plane old env vars via service discovery
+  // test added, If using plane old env vars via service discovery
   if (process.env.DATABASE_SERVICE_NAME) {
     var mongoServiceName = process.env.DATABASE_SERVICE_NAME.toUpperCase();
     mongoHost = process.env[mongoServiceName + '_SERVICE_HOST'];
